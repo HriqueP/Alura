@@ -48,13 +48,34 @@ export function TodoProvider({ children }) {
         ideal para atualizar um item especifico
   
         .map() => Modifica um item mantendo todos na lista
-        */
+      */
       return prevTodo.map((t) => {
         if (t.id === todo.id) {
           // Compara se o id do item recebido como parametro bate com algum do array
           return {
             ...t, // espalha todas as propriedades do item atual (SPREAD do objeto)
             completed: !t.completed, // inverte o valor da prop completed
+          };
+        }
+        return t;
+      });
+    });
+  };
+
+  const editTodo = (formData) => {
+    setTodos((prevTodo) => {
+      /* .map() é o mais indicado quando queremos apenas modificar o valor de uma prop ao mesmo tempo 
+        que queremos manter os demais itens na lista, ja que ele sempre retorna um array do mesmo tamanho
+        ideal para atualizar um item especifico
+  
+        .map() => Modifica um item mantendo todos na lista
+      */
+      return prevTodo.map((t) => {
+        if (t.id === selectedTodo.id) {
+          // Compara se o id do item recebido como parametro (selectedTodo) bate com algum do array
+          return {
+            ...t, // espalha todas as propriedades do item atual (SPREAD do objeto)
+            description: formData.get("description"), // altera o valor da descrição
           };
         }
         return t;
@@ -87,6 +108,7 @@ export function TodoProvider({ children }) {
         openFormTodoDialog,
         closeFormTodoDialog,
         selectedTodo,
+        editTodo,
       }}
     >
       {children}

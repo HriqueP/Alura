@@ -19,11 +19,17 @@ function App() {
     openFormTodoDialog,
     closeFormTodoDialog,
     selectedTodo,
+    editTodo,
   } = use(TodoContext);
 
   const handleFormSubmit = (formData) => {
-    addTodo(formData);
-    openFormTodoDialog();
+    if (selectedTodo) {
+      editTodo(formData);
+    } else {
+      addTodo(formData);
+    }
+
+    closeFormTodoDialog();
   };
 
   return (
@@ -53,7 +59,7 @@ function App() {
                 defaultValue={selectedTodo?.description} // ? ao lado da prop selectedTodo serve para que se a prop for null, ele não tenta acessar o atributo description da prop
               />
             </Dialog>
-            <FabButton onClick={openFormTodoDialog}>
+            <FabButton onClick={() => openFormTodoDialog()}>
               <IconPlus />
             </FabButton>
           </Footer>
