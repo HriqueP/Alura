@@ -1,0 +1,10 @@
+{
+  "pensamentos": [
+    {
+      "id": "C7PZgZS7cLI",
+      "conteudo": "Let chaos rule the word!        ",
+      "autoria": "Jura"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

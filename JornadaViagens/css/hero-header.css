@@ -1,0 +1,65 @@
+.hero {
+  background: url(../img/card-bg.jpg) no-repeat;
+  background-size: cover;
+  /* background-color: purple; */
+  text-align: left;
+  padding: 65px 25px;
+  color: #fff;
+  margin-bottom: 88px;
+}
+
+/* .hero .section-title {
+  background-color: red;
+} */
+
+.hero .section-title h1 {
+  font-size: 36px;
+  /* background-color: red; */
+}
+
+.hero .section-title hr {
+  border: none;
+  width: 180px;
+  height: 4px;
+  background-color: var(--emphasis-secondary-color);
+  margin: 16px 0 32px;
+}
+.hero .section-title p {
+  line-height: 32px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    /* background-color: red; */
+    padding: 65px 25px 100px 25px;
+  }
+
+  .hero .section-title {
+    /* background-color: blue; */
+    width: 580px;
+    margin: 0 auto;
+  }
+
+  .hero .section-title p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    /* background-color: blue; */
+    padding: 150px 0px 100px 65px;
+  }
+
+  .hero .section-title {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    background-color: orange;
+    padding: 150px 0px 120px 120px;
+  }
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADOPET</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./js/api.js" defer></script>
+    <script type="module" src="./js/main.js" defer></script>
+    <script type="module" src="./js/ui.js" defer></script>
+  </head>
+  <body>
+    <main id="container">
+      <ul id="lista-pets"></ul>
+
+      <form id="form-pets">
+        <input type="hidden" id="pet-id" />
+        <label for="pet-nome">Nome:</label>
+        <input type="text" name="pet-nome" id="pet-nome" /><br />
+
+        <label for="pet-especie">Especie:</label>
+        <input type="text" name="pet-especie" id="pet-especie" /><br />
+
+        <label for="pet-raca">Raca:</label>
+        <input type="text" name="pet-raca" id="pet-raca" /><br />
+
+        <button type="submit" id="enviar">Salvar</button>
+        <button type="reset" id="cancelar">Cancelar</button>
+      </form>
+    </main>
+  </body>
+</html>

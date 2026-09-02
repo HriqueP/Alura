@@ -1,0 +1,48 @@
+.categories {
+  margin-bottom: 80px;
+}
+
+.categories .section-title {
+  width: 312px;
+  margin: 0 auto;
+}
+
+.categories-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 64px;
+}
+
+.categories-cards .card {
+  background-color: var(--background-secondary-color);
+  width: 312px;
+  height: 220px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 24px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--text-primary-color);
+}
+
+.categories-cards .card h3 {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .categories .section-title {
+    width: 100%;
+  }
+
+  .categories-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Ajustar largura dos cards para que caibam 2 por linha apenas para essa largura de tela especifica */
+}

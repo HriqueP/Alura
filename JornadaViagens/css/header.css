@@ -1,0 +1,97 @@
+header {
+  background-color: var(--background-tertiary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px 48px;
+  position: relative;
+}
+
+nav {
+  display: none;
+}
+
+.logo-jornada {
+  display: inline-block;
+  width: 68px;
+  height: 64px;
+}
+.logo-mobile {
+  display: block;
+}
+.logo-desktop {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
+}
+
+.list-links {
+  list-style: none;
+}
+.list-links li {
+  margin: 16px 0;
+  font-weight: bold;
+}
+.list-links a {
+  color: var(--text-secondary-color);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-menu {
+    width: 467px;
+  }
+
+  .navigation-menu label {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .list-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .list-links li {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 38px 120px;
+  }
+
+  .logo-jornada {
+    display: inline-block;
+    width: 260px;
+    height: 64px;
+  }
+  .logo-mobile {
+    display: none;
+  }
+  .logo-desktop {
+    display: block;
+    cursor: pointer;
+  }
+
+  .list-links a {
+    cursor: pointer;
+  }
+  .list-links a:hover {
+    color: var(--emphasis-primary-color);
+    transition: 0.2s;
+  }
+}

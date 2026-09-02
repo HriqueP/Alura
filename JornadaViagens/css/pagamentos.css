@@ -1,0 +1,106 @@
+.pagamentos {
+  padding: 0px 25px;
+  /* background-color: blue; */
+  margin-bottom: 88px;
+}
+
+.container-infos-pagamento {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.infos-pagamento {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* background-color: red;cover */
+}
+
+.infos-pagamento h3 {
+  font-size: 22px;
+}
+
+.infos-pagamento p {
+  line-height: 26px;
+}
+
+.infos-pagamento .main-button {
+  width: 100%;
+}
+
+.imagens-pagamento {
+  /* background-color: orange; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  gap: 24px;
+}
+
+.imagens-pagamento .imagem-pagamento-1 {
+  background: url(../img/montagem-mobile-1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 254px;
+}
+
+.imagens-pagamento .imagem-pagamento-2 {
+  background: url(../img/montagem-mobile-2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 254px;
+}
+
+.imagens-pagamento .imagem-pagamento-3 {
+  background: url(../img/montagem-mobile-3.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-column: span 2;
+  height: 182px;
+}
+
+@media screen and (min-width: 768px) {
+  .pagamentos {
+    padding: 0px 60px;
+  }
+
+  .infos-pagamento .main-button {
+    width: 280px;
+  }
+
+  .imagens-pagamento .imagem-pagamento-1 {
+    background: url(../img/montagem-tablet-1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .imagens-pagamento .imagem-pagamento-2 {
+    background: url(../img/montagem-tablet-2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .imagens-pagamento .imagem-pagamento-3 {
+    background: url(../img/montagem-tablet-3.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-infos-pagamento {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .infos-pagamento {
+    flex: 1;
+  }
+
+  .imagens-pagamento {
+    flex: 2;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+}

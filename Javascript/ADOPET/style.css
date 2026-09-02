@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+:root {
+  --Baby-blue: #3b8cee;
+  --Branco: #eeeeee;
+  --Complementar: #c47311;
+}
+
+body {
+  background: var(--Baby-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: var(--Branco);
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+#lista-pets {
+  background-color: var(--Complementar);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 20px 0px;
+}
+
+#form-pets {
+  background-color: var(--Complementar);
+  padding: 10px;
+  border-radius: 12px;
+  padding: 10px;
+}

@@ -1,0 +1,59 @@
+.payments {
+  width: 312px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.payments .img-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  height: 460px;
+  margin-top: 24px;
+  width: 100%;
+}
+.img-payment.first {
+  background: url(../img/Montagem-japao-1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-payment.second {
+  background: url(../img/Montagem-japao-2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img-payment.thirdy {
+  background: url(../img/Montagem-japao-3.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+  .payments {
+    width: 648px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .payments .content-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .payments .img-gallery {
+    width: 900px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .payments {
+    width: 1200px;
+  }
+  .payments .text-content {
+    width: 360px;
+  }
+  .payments .img-gallery {
+    width: 790px;
+  }
+}

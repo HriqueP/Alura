@@ -1,0 +1,28 @@
+.footer {
+  background-color: var(--background-tertiary-color);
+  color: var(--text-secondary-color);
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-info {
+  margin-bottom: 20px;
+}
+.footer-info p {
+  margin-top: 10px;
+}
+
+.footer-icons-cluster {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

@@ -1,0 +1,75 @@
+.rodape {
+  background-color: var(--background-tertiary-color);
+  color: var(--text-secondary-color);
+  /* margin-bottom: 88px; */
+}
+
+.imagem-rodape {
+  /* background-color: blueviolet; */
+  background: url(../img/imagem-rodape-mobile.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.infos-rodape {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px 24px;
+}
+
+.rodape-geral {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.imagem-logo-jornada {
+  width: 160px;
+}
+
+.rodape-textos {
+  line-height: 32px;
+}
+
+.rodape-links p {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .imagem-rodape {
+    /* background-color: blueviolet; */
+    background: url(../img/imagem-rodape-tablet.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .infos-rodape {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rodape-geral {
+    text-align: left;
+    align-items: start;
+  }
+
+  .imagem-rodape {
+    /* background-color: blueviolet; */
+    background: url(../img/imagem-rodape-desktop.png) no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+
+  .rodape-links-icones img {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+}
