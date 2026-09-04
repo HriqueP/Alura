@@ -10,6 +10,7 @@ import { IconPlus, IconSchool } from "./components/icons";
 import { ToDoForm } from "./components/TodoForm";
 import TodoContext from "./components/TodoProvider/TodoContext";
 import { TodoGroup } from "./components/TodoGroup";
+import { EmptyState } from "./components/EmptyState";
 
 function App() {
   const {
@@ -45,6 +46,18 @@ function App() {
             heading="Para estudar"
             itens={todos.filter((t) => !t.completed)}
           />
+
+          {
+            /* && na seguinte expressão faz o papel de um if sem o else, é o idela para condições simples
+          && -> Avalia da esquerda para a direita e retorna o primeiro valor falsy que encontrar, ou o 
+          ultimo valor se todos forem truthy
+
+          false && "qualquer coisa" => false
+
+          true && "qualquer coisa" => "qualquer coisa"
+          */
+            todos.length == 0 && <EmptyState />
+          }
 
           <TodoGroup
             heading="Concluido"

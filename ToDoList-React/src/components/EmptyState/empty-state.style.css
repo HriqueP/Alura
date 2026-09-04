@@ -1,0 +1,20 @@
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 24px;
+}
+
+.empty-state p {
+  margin: 0;
+  color: #eaeaea;
+  text-align: center;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.empty-state img {
+  max-width: 100%;
+}
