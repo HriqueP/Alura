@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list li {
+  border-bottom: 1px solid var(--neutral-header);
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}

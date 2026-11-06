@@ -1,0 +1,21 @@
+.aside {
+  max-width: 282px;
+  background-color: var(--neutral-header);
+  min-height: 100vh;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+
+.aside_logo {
+  width: 50px;
+}
+
+.footer {
+  color: var(--neutral-text);
+  font-size: 13px;
+  line-height: 120%;
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+.banks {
+  display: flex;
+  justify-content: space-between;
+  color: var(--neutral-text);
+}
+
+.banks p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 120%;
+}
+
+.bank_details {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.bank_account_value {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100px;
+}
+
+.bank_account_value p:first-child {
+  font-weight: 500;
+}
