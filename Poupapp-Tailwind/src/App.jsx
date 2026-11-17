@@ -1,7 +1,9 @@
 import { Aside } from "./Components/Aside";
 import Card from "./Components/Card";
 import { Container } from "./Components/Container";
+import { DailyBudget } from "./Components/DailyBudget";
 import { Main } from "./Components/Main";
+import { SavingsStatus } from "./Components/SavingsStatus";
 import { SearchInput } from "./Components/SearchInput";
 import { Typography } from "./Components/Typography";
 
@@ -25,12 +27,16 @@ function App() {
           <section>
             <Card>
               <Card.Header>Orçamento diario disponivel:</Card.Header>
-              <Card.Body>R$200</Card.Body>
+              <Card.Body>
+                <DailyBudget value={200} />
+              </Card.Body>
             </Card>
 
             <Card>
               <Card.Header>Progresso da meta financeira</Card.Header>
-              <Card.Body>R$200</Card.Body>
+              <Card.Body>
+                <SavingsStatus />
+              </Card.Body>
             </Card>
 
             <Card>
