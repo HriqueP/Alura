@@ -1,3 +1,5 @@
+import { Button } from "../Button";
+import { IconCurrency } from "../Icons";
 import { TransactionItem } from "../TransactionItem";
 
 export const Transactions = () => {
@@ -26,7 +28,7 @@ export const Transactions = () => {
 
   return (
     <>
-      <ul className="flex flex-col gap-4">
+      <ul className="flex flex-col gap-4 mb-4">
         {itens.map((transactionItem, index) => {
           return (
             <li key={index}>
@@ -35,6 +37,13 @@ export const Transactions = () => {
           );
         })}
       </ul>
+
+      <div className="flex justify-center">
+        <Button>
+          <IconCurrency />
+          Adicionar Transação
+        </Button>
+      </div>
     </>
   );
 };
