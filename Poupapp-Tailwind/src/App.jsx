@@ -24,7 +24,7 @@ function App() {
             </Typography>
           </div>
 
-          <section>
+          <section className="grid grid-cols-2 item-stretch gap-6">
             <Card>
               <Card.Header>Orçamento diario disponivel:</Card.Header>
               <Card.Body>
@@ -46,7 +46,14 @@ function App() {
 
             <Card>
               <Card.Header>Minhas contas</Card.Header>
-              <Card.Body>R$200</Card.Body>
+              <Card.Body>
+                <p>R$200</p>
+                <p>R$200</p>
+                <p>R$200</p>
+                <p>R$200</p>
+                <p>R$200</p>
+                <p>R$200</p>
+              </Card.Body>
             </Card>
           </section>
         </Main>

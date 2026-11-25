@@ -1,5 +1,5 @@
 const Card = ({ children }) => {
-  return <div className="bg-neutral-surface rounded-3xl">{children}</div>;
+  return <div className="bg-neutral-surface rounded-3xl flex flex-col">{children}</div>;
 };
 
 export const CardHeader = ({ children }) => {
@@ -11,7 +11,7 @@ export const CardHeader = ({ children }) => {
 };
 
 export const CardBody = ({ children }) => {
-  return <div className="py-6 px-4">{children}</div>;
+  return <div className="py-6 px-4 flex-grow flex flex-col justify-center">{children}</div>;
 };
 
 Card.Header = CardHeader;
