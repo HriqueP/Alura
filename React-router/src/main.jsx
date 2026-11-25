@@ -11,11 +11,15 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/auth/login" element={<Login />} />
-        <Route path="/auth/register" element={<Register />} />
+        <Route path="/auth">
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
+        </Route>
 
-        <Route path="/" element={<Feed />} />
-        <Route path="/blod-post" element={<BlogPost />} />
+        <Route path="/">
+          <Route path="" element={<Feed />} />
+          <Route path="blog-post" element={<BlogPost />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>,
